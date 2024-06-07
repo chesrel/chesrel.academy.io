@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Plan</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .plan {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .plan-header {
+    background-color: #7DA1CF;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.5em;
+  }
+
+  .plan-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .plan-features li {
+    margin: 10px 0;
+  }
+
+  .plan-price {
+    font-size: 1.5em;
+    color: #333;
+    margin: 20px 0;
+  }
+
+  .plan-button {
+    background-color: #7DA1CF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  .plan-button:hover {
+    background-color: #496484;
+  }
+
+  @media screen and (max-width: 800px) {
+    .plans {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .plan {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="plans">
+  <div class="plan">
+    <div class="plan-header">Basic</div>
+    <ul class="plan-features">
+      <li>Feature 1</li>
+      <li>Feature 2</li>
+      <li>Feature 3</li>
+    </ul>
+    <div class="plan-price">$9.99/month</div>
+    <button class="plan-button">Sign Up</button>
+  </div>
+  <div class="plan">
+    <div class="plan-header">Standard</div>
+    <ul class="plan-features">
+      <li>Feature 1</li>
+      <li>Feature 2</li>
+      <li>Feature 3</li>
+      <li>Feature 4</li>
+    </ul>
+    <div class="plan-price">$19.99/month</div>
+    <button class="plan-button">Sign Up</button>
+  </div>
+  <div class="plan">
+    <div class="plan-header">Premium</div>
+    <ul class="plan-features">
+      <li>Feature 1</li>
+      <li>Feature 2</li>
+      <li>Feature 3</li>
+      <li>Feature 4</li>
+      <li>Feature 5</li>
+    </ul>
+    <div class="plan-price">$29.99/month</div>
+    <button class="plan-button">Sign Up</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Plan</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+  }
+
+  .plan-table th,
+  .plan-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .plan-table th {
+    background-color: #7DB1CF;
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .plan-table td:first-child {
+    text-align: left;
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .plan-button {
+    background-color: #7DA1CF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  .plan-button:hover {
+    background-color: #496484;
+  }
+
+  @media screen and (max-width: 800px) {
+    .plan-table, .plan-table th, .plan-table td {
+      display: block;
+      width: 100%;
+    }
+
+    .plan-table thead {
+      display: none;
+    }
+
+    .plan-table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .plan-table td {
+      text-align: right;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    .plan-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 10px;
+      text-align: left;
+      font-weight: bold;
+      background-color: #f2f2f2;
+    }
+  }
+</style>
+</head>
+<body>
+
+<table class="plan-table">
+  <thead>
+    <tr>
+      <th>Features</th>
+      <th>Basic</th>
+      <th>Standard</th>
+      <th>Premium</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Features">Feature 1</td>
+      <td data-label="Basic">✓</td>
+      <td data-label="Standard">✓</td>
+      <td data-label="Premium">✓</td>
+    </tr>
+    <tr>
+      <td data-label="Features">Feature 2</td>
+      <td data-label="Basic">✓</td>
+      <td data-label="Standard">✓</td>
+      <td data-label="Premium">✓</td>
+    </tr>
+    <tr>
+      <td data-label="Features">Feature 3</td>
+      <td data-label="Basic">✓</td>
+      <td data-label="Standard">✓</td>
+      <td data-label="Premium">✓</td>
+    </tr>
+    <tr>
+      <td data-label="Features">Feature 4</td>
+      <td data-label="Basic">✗</td>
+      <td data-label="Standard">✓</td>
+      <td data-label="Premium">✓</td>
+    </tr>
+    <tr>
+      <td data-label="Features">Feature 5</td>
+      <td data-label="Basic">✗</td>
+      <td data-label="Standard">✗</td>
+      <td data-label="Premium">✓</td>
+    </tr>
+    <tr>
+      <td data-label="Features">Price</td>
+      <td data-label="Basic">$9.99/month</td>
+      <td data-label="Standard">$19.99/month</td>
+      <td data-label="Premium">$29.99/month</td>
+    </tr>
+    <tr>
+      <td data-label="Features"></td>
+      <td data-label="Basic"><button class="plan-button">Sign Up</button></td>
+      <td data-label="Standard"><button class="plan-button">Sign Up</button></td>
+      <td data-label="Premium"><button class="plan-button">Sign Up</button></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+

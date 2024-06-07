@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+}
+.banner1 {
+    display: flex;
+    width: 90%;
+    background-color: #f2f2f2;
+    border-radius: 2vw;
+    justify-content: center;
+    height: fit-content;
+    align-self: center;
+}
+
+.learntoslideh1 {
+    display: flex;
+    align-items: center;
+    height: min-content;
+    width: 80%;
+    justify-content: flex-start;
+    
+}
+
+
+.learntoslideh1, .banner1p, .learnto-slide {
+    font-size: calc(1.2vw + 1.2vh);
+}
+
+.banner1p {
+    width: 80%;
+}
+
+.banner1img {
+    display: flex;
+    width: 45vw;
+    height: auto;
+}
+
+.banner1img img {
+    width: 100%;
+    height: auto;
+}
+
+.b1wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.b1button {
+    background-color: #7DA1CF;
+    border-radius: 2vw;
+    /*position: absolute;
+    left: 5%;
+    bottom: 8%; */
+    color: white;
+    font-size: 2vw;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: solid 2px white;
+    width:fit-content;
+}
+
+.b1button:hover {
+    background-color: #496484;
+}
+
+.learntocont {          
+  background-color: #7da1cf;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  width: 12vw;
+  border-radius: 2vw;
+  height: 4.75vh;
+  align-items: center;
+}
+
+
+.learnto-slide {
+  animation: 5s slide infinite linear;
+  display: inline-block;
+  /*margin-top: 0.5vw;
+  margin-bottom: 0.5vw; */
+  line-height: 0;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.learnto-slide p {
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+  font-family: Courier;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="banner1">
+        <div class="b1wrap">
+            <div class="learntoslideh1">
+                <h1>Let's talk!</h1>
+                
+
+            <div class="banner1p">
+                <p>Welcome to Chesrel Academy! 🚀 Explore our programming courses, certificates, and personalized mentorship. Let’s embark on your coding journey together!</p>
+                
+            </div> 
+            <button class="b1button">Explore now</button>
+        </div>
+        <div class="banner1img">
+            <img src="compb1.png">
+        </div>
+    </div>
