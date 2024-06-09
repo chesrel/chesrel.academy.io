@@ -340,12 +340,13 @@ body {
   }
   
   
-  .whyheading, .menth, .testimh1 {
+  .whyheading, .menth, .testimh1, .coursesh {
     display: flex;
     justify-content: center;
   
   }
-  
+
+
   
   
   .mentcont {
